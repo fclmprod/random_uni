@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('bootstrap/css/bootstrap.css');
+
 /* random_uni - 20150509 */
 /* Stylesheet */
 
@@ -6,3 +8,27 @@ body {
 	
 }
 
+#bgWrap {
+	position:fixed;
+	top:0;
+	left:0;
+	widows:100%;
+	height:100%;
+
+	font-family:Arial, Helvetica, sans-serif;
+	
+	cursor:text;
+	z-index:0;
+}
+
+.element {
+	position:absolute;
+	line-height:0px;
+	
+	
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-o-user-select:none;"
+	user-select:none;
+}
