@@ -11,17 +11,40 @@
 </head>
 
 <body>
-<div id="ui_wrap" class="col-xs-2">
-	<h2><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</h2>
-    <p>
-        <label for="e_amount_range">Characters amount :</label>
-        <input type="text" id="e_amount_range" readonly style="border:0; color:#f6931f; font-weight:bold;" size="100">
+<div id="uiWrap" class="col-xs-3">
+	<h2><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings &#0001;</h2>
+    
+    <label for="e">Characters :</label>
+	<p><select name="e" id="e">
+
+	</select>
+	<button  id="add">+</button><button  id="remove">-</button>
+    <br>
+    <p id="eOutput">&ensp;</p>
     </p>
+    
+    <label for="e_amount_range">Characters amount :</label>
+    <input type="text" id="e_amount_range" readonly style="border:0; color:#f6931f; font-weight:bold;" size="100">
+    	
     <div id="e_amount_slider"></div>
-    <button class="btn btn-default" id="submit">Randomize</button>
+    
+    <label for="e_size_range">Characters size :</label>
+    <input type="text" id="e_size_range" readonly style="border:0; color:#f6931f; font-weight:bold;" size="100">
+
+	 <div id="e_size_slider"></div>
+     
+     <label for="e_color">Colors</label>
+     <div id="colors">
+     	<input type="radio" id="colors1" name="colors"><label for="colors1">Random Colors</label>
+        <input type="radio" id="colors2" name="colors"><label for="colors2">Palettes</label>
+     </div>
+     
+	 <button class="btn btn-default" id="submit">Generate</button>
 </div>
 
-<div id="bgWrap" class="col-lg-12">
+<p id="bgWrap" class="col-lg-12">
+</p>
+<div id="elements" style="display:none">
 </div>
 
 <script src="jquery-1.9.1.min.js"></script>
